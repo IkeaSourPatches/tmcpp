@@ -3,3 +3,10 @@ component NestedList(outerSize, initializerFunction=(x)=>[]) {
     list_{i} = initializerFunction(i)
   }
 }
+
+
+macro getList(n, name) {
+  name.list_{n} . hidden
+}
+
+
